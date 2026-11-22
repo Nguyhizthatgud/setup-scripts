@@ -11,7 +11,7 @@ const appDir = hasSrc ? 'src/app' : 'app';
 
 // 1. Kéo bộ SCSS 7-1 và cài Sass
 run(`pnpm dlx degit Nguyhizthatgud/scss-7-1-template ${stylesDir} -f`);
-run('pnpm add -D sass');
+run('pnpm add -D sass --ignore-scripts');
 
 // 2. Xóa file CSS mặc định của Next.js App Router
 [`${appDir}/globals.css`, `${appDir}/page.module.css`].forEach((f) => {
