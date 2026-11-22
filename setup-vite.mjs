@@ -7,7 +7,7 @@ const run = (cmd) => execSync(cmd, { stdio: 'inherit' });
 // 1. Kéo template & cài dependencies
 run('pnpm dlx degit Nguyhizthatgud/vite-project-template src -f');
 run('pnpm dlx degit Nguyhizthatgud/scss-7-1-template src/styles -f');
-run('pnpm add -D sass @types/node');
+run('pnpm add -D sass --ignore-scripts');
 
 // 2. Xóa file mẫu dư thừa của Vite
 ['src/App.css', 'src/index.css', 'src/assets/react.svg'].forEach((f) => {
